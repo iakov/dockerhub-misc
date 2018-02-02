@@ -9,3 +9,5 @@ RUN sdkmanager "system-images;android-24;google_apis;armeabi-v7a" "system-images
 RUN echo no | avdmanager create avd -n testEmulator24 -k "system-images;android-24;google_apis;armeabi-v7a"
 RUN echo no | avdmanager create avd -n testEmulator19 -k "system-images;android-19;google_apis;armeabi-v7a"
     
+ENV ANDROID_HOME="/opt/android-sdk-linux"
+ENV ANDROID_NDK_HOME="/opt/android-sdk-linux/ndk-bundle"
