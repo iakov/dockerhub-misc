@@ -5,7 +5,7 @@ ENV _JAVA_OPTIONS="-Xmx3000m -XX:ParallelGCThreads=2 -XX:ConcGCThreads=2 -XX:Par
 ENV PATH="/opt/android-sdk-linux/platform-tools:/opt/android-sdk-linux/tools/bin:/opt/android-sdk-linux/tools:/opt/android-sdk-linux/bin:/usr/local/bin:$PATH"
 
 RUN apt-get update && apt-get full-upgrade -y \
-&& apt-get install -y openssh-client valgrind cmake g++ zlib1g-dev libglib2.0-dev \
+&& apt-get install -y openssh-client valgrind cmake g++ zlib1g-dev libglib2.0-dev libjpeg-dev\
 #seems like for 'artful' next line is not required
 #git-lfs now can be installed directly from the 'universe' repo
 && curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash \
