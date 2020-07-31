@@ -10,14 +10,13 @@ RUN apt-get update && apt-get full-upgrade -y \
 #git-lfs now can be installed directly from the 'universe' repo
 && curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash \
 && apt-get install git-lfs \
-&& sdkmanager \
+&& sdkmanager --install \
                "tools" \
                "ndk-bundle" \
                "platforms;android-28" \
                "cmake;3.10.2.4988404" \
-               "lldb;3.1" \
                "platform-tools" \
-               "build-tools;27.0.3" \
+               "build-tools;30.0.1" \
   && sdkmanager --update
 #RUN sdkmanager \
     #"system-images;android-24;google_apis;armeabi-v7a" \
