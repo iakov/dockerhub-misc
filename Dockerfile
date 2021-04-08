@@ -12,7 +12,7 @@ RUN apt-get update && apt-get full-upgrade -y \
 && apt-get install git-lfs \
 && sdkmanager --install \
                "tools" \
-               "ndk-bundle" \
+               "ndk;21.4.7075529" \
                "platforms;android-28" \
                "cmake;3.10.2.4988404" \
                "platform-tools" \
